@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#000"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context="io.cabie.cabbie.CustomerLoginRegisterActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Customer Login"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:visibility="gone"
+        android:id="@+id/inputNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Names"
+        android:inputType="textPersonName"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:visibility="gone"
+        android:id="@+id/inputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"/>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:onClick="login"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="0dp"
+        fancy:fb_text="Sign In"
+        fancy:fb_textColor="#FFFFFF"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:visibility="gone"
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:onClick="sign_up"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="0dp"
+        fancy:fb_text="Sign Up"
+        fancy:fb_textColor="#FFFFFF"/>
+
+    <TextView
+        android:onClick="no_account"
+        android:id="@+id/txtRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="You Don't Have An Account?"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+
+
+
+</LinearLayout>

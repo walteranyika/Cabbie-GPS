@@ -1,0 +1,32 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:map="http://schemas.android.com/apk/res-auto"
+                 xmlns:tools="http://schemas.android.com/tools"
+                 tools:context="io.cabie.cabbie.CustomerMapActivity"
+                 xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:onClick="callCab"
+        android:id="@+id/buttonCallCab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="0dp"
+        fancy:fb_text="Call A Cab"
+        fancy:fb_textColor="#FFFFFF"/>
+
+</RelativeLayout>
+
